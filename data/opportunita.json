@@ -1,0 +1,58 @@
+[
+  {
+    "titolo": "Percorsi individuali",
+    "descrizione": "Esperienze espressive rivolte alla consapevolezza, al rilassamento, alla scelta e alla crescita personale.",
+    "immagine": "",
+    "ordine": 10,
+    "mostra": true
+  },
+  {
+    "titolo": "Piccoli gruppi",
+    "descrizione": "Laboratori che favoriscono incontro, cooperazione, ascolto e costruzione condivisa.",
+    "immagine": "",
+    "ordine": 20,
+    "mostra": true
+  },
+  {
+    "titolo": "Anziani e demenze",
+    "descrizione": "Attività adattate per sostenere partecipazione, memoria, sensorialità e relazione.",
+    "immagine": "",
+    "ordine": 30,
+    "mostra": true
+  },
+  {
+    "titolo": "Caregiver e famiglie",
+    "descrizione": "Spazi di sollievo, ascolto e rielaborazione attraverso il fare artistico e la condivisione.",
+    "immagine": "",
+    "ordine": 40,
+    "mostra": true
+  },
+  {
+    "titolo": "Formazione per operatori",
+    "descrizione": "Seminari e laboratori per educatori, insegnanti e professionisti della relazione d’aiuto.",
+    "immagine": "",
+    "ordine": 50,
+    "mostra": true
+  },
+  {
+    "titolo": "Teatroterapia e corpo",
+    "descrizione": "Corpo, movimento, voce, spazio, ritmo e gioco per sostenere presenza e relazione.",
+    "immagine": "",
+    "ordine": 60,
+    "mostra": true
+  },
+  {
+    "titolo": "Enti, scuole e strutture",
+    "descrizione": "Progetti su misura, cicli di laboratori e interventi concordati con il servizio committente.",
+    "immagine": "",
+    "ordine": 70,
+    "mostra": true
+  },
+  {
+    "titolo": "Progetti artistici e territoriali",
+    "descrizione": "Opere collettive, installazioni e percorsi che valorizzano memoria, identità e comunità.",
+    "immagine": "",
+    "ordine": 80,
+    "mostra": true
+  }
+]

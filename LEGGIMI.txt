@@ -1,0 +1,26 @@
+SITO ARTETERAPIA — VERSIONE MODIFICABILE
+
+Il sito è già predisposto per Pages CMS.
+
+In Pages CMS potrai modificare:
+- tutti i testi principali;
+- Percorsi;
+- Destinatari;
+- Opportunità;
+- Formazione;
+- Galleria;
+- Esperienza;
+- Domande frequenti;
+- contatti;
+- fotografie nelle sezioni Opportunità e Galleria.
+
+Per pubblicarlo:
+1. crea su GitHub un repository pubblico chiamato arteterapia-vito-furio;
+2. carica TUTTO il contenuto di questa cartella nella radice del repository;
+3. abilita il repository nell'app Pages CMS;
+4. collega il repository al Worker Cloudflare arteterapia-vito-furio;
+5. Build command vuoto; Deploy command: npx wrangler deploy; Root: /
+
+NOTA
+Le fotografie del Worker attuale non sono contenute nel pacchetto: la versione è predisposta
+per aggiungerle/sostituirle facilmente da Pages CMS.

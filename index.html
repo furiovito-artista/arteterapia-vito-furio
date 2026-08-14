@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Arteterapia di Vito Furio</title>
+<meta name="description" content="">
+<style>
+:root{--ink:#24363a;--paper:#fffaf3;--soft:#f6f0e7;--terr:#b75c45;--gold:#e0b46f;--night:#12282f;--muted:#617276;--line:rgba(36,54,58,.14);--max:1180px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.65}a{color:inherit;text-decoration:none}img{display:block;max-width:100%}
+.wrap{width:min(var(--max),calc(100% - 32px));margin:auto}.section{padding:90px 0}.soft{background:var(--soft)}.dark{background:var(--night);color:white}
+header{position:sticky;top:0;z-index:50;background:rgba(255,250,243,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:22px}.brand strong{display:block;font-family:Georgia,serif;font-size:1.15rem}.brand small{color:var(--muted)}
+.links{display:flex;gap:18px;flex-wrap:wrap;font-size:.82rem;font-weight:700}.links a:hover{color:var(--terr)}
+.hero{padding:115px 0 95px;background:radial-gradient(circle at 80% 20%,rgba(224,180,111,.34),transparent 30%),radial-gradient(circle at 10% 80%,rgba(111,132,119,.18),transparent 27%),linear-gradient(135deg,#fffaf3,#f4e7d6)}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:55px}.eyebrow{text-transform:uppercase;letter-spacing:.16em;color:var(--terr);font-size:.72rem;font-weight:800}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;margin-top:0}h1{font-size:clamp(3.4rem,7vw,6.7rem);line-height:.92;letter-spacing:-.05em;margin:16px 0 24px}h2{font-size:clamp(2.4rem,5vw,4.5rem);line-height:1;margin:10px 0 18px}h3{font-size:1.5rem}.lead{font-size:1.1rem;color:var(--muted);max-width:780px}.hero .lead{font-size:1.22rem}
+.hero-art{aspect-ratio:1/1;border-radius:42% 58% 55% 45%;background:linear-gradient(145deg,#e9b870,#b75c45 48%,#21424a);box-shadow:0 30px 70px rgba(36,54,58,.18);position:relative;overflow:hidden}
+.hero-art:before,.hero-art:after{content:"";position:absolute;border:2px solid rgba(255,255,255,.62);border-radius:50%}.hero-art:before{width:60%;height:60%;left:18%;top:16%}.hero-art:after{width:30%;height:30%;right:12%;bottom:13%}
+.quote{font-family:Georgia,serif;font-size:1.35rem;font-style:italic;margin-top:28px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.cards{margin-top:36px}
+.card{padding:28px;border:1px solid var(--line);border-radius:24px;background:white;min-height:210px}.dark .card{background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.14)}.card p{color:var(--muted)}.dark .card p{color:#ced9da}
+.number{color:var(--terr);font-weight:800;letter-spacing:.1em}.dark .number{color:var(--gold)}
+.media-card{overflow:hidden;border-radius:24px;background:white;border:1px solid var(--line)}.media{aspect-ratio:16/10;background:linear-gradient(135deg,#d9c2a3,#7b8f82);display:grid;place-items:center;color:white;font-size:.8rem;text-align:center;padding:20px}.media img{width:100%;height:100%;object-fit:cover}.media-card .body{padding:22px}.media-card p{color:var(--muted)}
+.two{display:grid;grid-template-columns:.9fr 1.1fr;gap:55px;align-items:start}
+.tagrow{display:flex;flex-wrap:wrap;gap:9px;margin-top:24px}.tag{padding:8px 12px;border:1px solid rgba(224,180,111,.35);border-radius:999px;color:var(--gold);font-size:.8rem}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:35px}.shot{border-radius:20px;overflow:hidden;background:#fff;border:1px solid var(--line)}.shot .media{aspect-ratio:1/1}.shot figcaption{padding:15px}.shot h3{font-size:1.15rem;margin:0 0 5px}.shot p{font-size:.85rem;color:var(--muted);margin:0}
+.faq details{padding:20px 0;border-bottom:1px solid var(--line)}.faq summary{font-family:Georgia,serif;font-size:1.25rem;font-weight:700;cursor:pointer}.faq p{color:var(--muted)}
+.contact-box{padding:34px;border-radius:26px;background:white;border:1px solid var(--line)}.contact-box a{display:block;padding:12px 0;border-bottom:1px solid var(--line);font-weight:700}.contact-box a:last-child{border-bottom:0}
+footer{padding:32px 0;background:#0b1c21;color:#b9c7c9;font-size:.82rem}
+@media(max-width:900px){.hero-grid,.two{grid-template-columns:1fr}.grid4{grid-template-columns:1fr 1fr}.grid3{grid-template-columns:1fr 1fr}.gallery{grid-template-columns:1fr 1fr}.links{display:none}.hero{padding-top:75px}}
+@media(max-width:620px){.grid3,.grid4,.gallery{grid-template-columns:1fr}.section{padding:70px 0}.brand small{display:none}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav"><a class="brand" href="#top"><strong id="brand-name"></strong><small id="brand-sub"></small></a><nav class="links">
+<a id="m-percorsi" href="#percorsi"></a><a id="m-opportunita" href="#opportunita"></a><a id="m-formazione" href="#formazione"></a><a id="m-galleria" href="#galleria"></a><a id="m-sandart" href="#sandart"></a><a id="m-esperienza" href="#esperienza"></a><a id="m-chi" href="#chi-sono"></a><a id="m-contatti" href="#contatti"></a>
+</nav></div></header>
+
+<main id="top">
+<section class="hero"><div class="wrap hero-grid"><div><div class="eyebrow" id="hero-label"></div><h1 id="hero-title"></h1><p class="lead" id="hero-text"></p><p class="quote" id="hero-quote"></p></div><div class="hero-art" aria-hidden="true"></div></div></section>
+
+<section class="section" id="percorsi"><div class="wrap"><div class="eyebrow">Il mio lavoro</div><h2 id="title-percorsi"></h2><p class="lead" id="text-percorsi"></p><div class="grid3 cards" id="percorsi-grid"></div></div></section>
+
+<section class="section soft" id="destinatari"><div class="wrap"><div class="eyebrow">A chi si rivolgono</div><h2 id="title-destinatari"></h2><div class="grid4 cards" id="destinatari-grid"></div></div></section>
+
+<section class="section" id="opportunita"><div class="wrap"><div class="eyebrow">Ambiti e opportunità</div><h2 id="title-opportunita"></h2><p class="lead" id="text-opportunita"></p><div class="grid4 cards" id="opportunita-grid"></div></div></section>
+
+<section class="section dark" id="demenze"><div class="wrap two"><div><div class="eyebrow" style="color:var(--gold)">Anziani e demenze</div><h2 id="title-demenze"></h2></div><div><p class="lead" style="color:#d2dcde" id="text-demenze"></p><div class="tagrow"><span class="tag">Attività adattate</span><span class="tag">Memoria</span><span class="tag">Sensorialità</span><span class="tag">Caregiver</span></div></div></div></section>
+
+<section class="section soft" id="formazione"><div class="wrap"><div class="eyebrow">Formazione</div><h2 id="title-formazione"></h2><p class="lead" id="text-formazione"></p><div class="grid3 cards" id="formazione-grid"></div></div></section>
+
+<section class="section dark" id="sandart"><div class="wrap two"><div class="hero-art" style="aspect-ratio:16/11;border-radius:30px"></div><div><div class="eyebrow" style="color:var(--gold)">I Sabbiastorie</div><h2 id="title-sandart"></h2><p class="lead" style="color:#d2dcde" id="text-sandart"></p><div class="tagrow"><span class="tag">Grandi storie</span><span class="tag">Musica dal vivo</span><span class="tag">Inventastorie</span><span class="tag">Eventi speciali</span></div></div></div></section>
+
+<section class="section" id="chi-sono"><div class="wrap two"><div><div class="eyebrow">Chi sono</div><h2 id="title-chi"></h2><p><strong id="role-chi"></strong></p><p class="lead" id="text-chi"></p></div><div class="card"><h3>Principi</h3><p><strong>Relazione</strong> prima del risultato</p><p><strong>Adattamento</strong> prima della rigidità</p><p><strong>Autenticità</strong> prima della prestazione</p></div></div></section>
+
+<section class="section soft" id="galleria"><div class="wrap"><div class="eyebrow">Immagini dal lavoro</div><h2 id="title-gallery"></h2><p class="lead" id="text-gallery"></p><div class="gallery" id="gallery-grid"></div></div></section>
+
+<section class="section" id="esperienza"><div class="wrap"><div class="eyebrow">Profilo professionale</div><h2 id="title-exp"></h2><p class="lead" id="text-exp"></p><div class="grid4 cards" id="exp-grid"></div></div></section>
+
+<section class="section soft" id="faq"><div class="wrap two"><div><div class="eyebrow">Domande frequenti</div><h2 id="title-faq"></h2></div><div class="faq" id="faq-grid"></div></div></section>
+
+<section class="section dark" id="contatti"><div class="wrap two"><div><div class="eyebrow" style="color:var(--gold)">Contatti</div><h2 id="title-contact"></h2><p class="lead" style="color:#d2dcde" id="text-contact"></p></div><div class="contact-box" style="color:var(--ink)"><div id="zona"></div><a id="mail"></a><a id="phone"></a><div style="margin-top:15px">P. IVA <span id="piva"></span></div></div></div></section>
+</main>
+
+<footer><div class="wrap"><div id="foot"></div><div style="margin-top:10px" id="legal"></div></div></footer>
+
+<script>
+const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
+async function j(p){const r=await fetch(p,{cache:'no-store'});return r.json()}
+(async()=>{
+ const [s,p,d,o,f,g,e,q]=await Promise.all([j('data/sito.json'),j('data/percorsi.json'),j('data/destinatari.json'),j('data/opportunita.json'),j('data/formazione.json'),j('data/galleria.json'),j('data/esperienza.json'),j('data/faq.json')]);
+ document.title=s.titolo_pagina;document.querySelector('meta[name=description]').content=s.descrizione_pagina;
+ const set=(id,v)=>{const x=document.getElementById(id);if(x)x.textContent=v??''};
+ [['brand-name',s.nome],['brand-sub',s.sottotitolo_brand],['hero-label',s.hero_etichetta],['hero-title',s.hero_titolo],['hero-text',s.hero_testo],['hero-quote','“'+s.hero_frase+'”'],
+ ['m-percorsi',s.menu_percorsi],['m-opportunita',s.menu_opportunita],['m-formazione',s.menu_formazione],['m-galleria',s.menu_galleria],['m-sandart',s.menu_sandart],['m-esperienza',s.menu_esperienza],['m-chi',s.menu_chi_sono],['m-contatti',s.menu_contatti],
+ ['title-percorsi',s.titolo_percorsi],['text-percorsi',s.testo_percorsi],['title-destinatari',s.titolo_destinatari],['title-opportunita',s.titolo_opportunita],['text-opportunita',s.testo_opportunita],
+ ['title-demenze',s.titolo_demenze],['text-demenze',s.testo_demenze],['title-formazione',s.titolo_formazione],['text-formazione',s.testo_formazione],
+ ['title-sandart',s.titolo_sandart],['text-sandart',s.testo_sandart],['title-chi',s.titolo_chi_sono],['role-chi',s.ruolo_chi_sono],['text-chi',s.testo_chi_sono],
+ ['title-gallery',s.titolo_galleria],['text-gallery',s.testo_galleria],['title-exp',s.titolo_esperienza],['text-exp',s.testo_esperienza],['title-faq',s.titolo_faq],
+ ['title-contact',s.titolo_contatti],['text-contact',s.testo_contatti],['zona',s.zona],['piva',s.piva],['foot',s.footer],['legal',s.nota_legale]].forEach(([i,v])=>set(i,v));
+ const cards=(arr,id)=>document.getElementById(id).innerHTML=arr.filter(x=>x.mostra!==false).sort((a,b)=>+a.ordine-+b.ordine).map((x,i)=>`<article class="card"><div class="number">${String(i+1).padStart(2,'0')}</div><h3>${esc(x.titolo)}</h3><p>${esc(x.descrizione)}</p></article>`).join('');
+ cards(p,'percorsi-grid');cards(d,'destinatari-grid');cards(f,'formazione-grid');cards(e,'exp-grid');
+ document.getElementById('opportunita-grid').innerHTML=o.filter(x=>x.mostra!==false).sort((a,b)=>+a.ordine-+b.ordine).map((x,i)=>`<article class="media-card"><div class="media">${x.immagine?`<img src="${esc(x.immagine)}" alt="${esc(x.titolo)}">`:'Aggiungi una fotografia da Pages CMS'}</div><div class="body"><div class="number">${String(i+1).padStart(2,'0')}</div><h3>${esc(x.titolo)}</h3><p>${esc(x.descrizione)}</p></div></article>`).join('');
+ document.getElementById('gallery-grid').innerHTML=g.filter(x=>x.mostra!==false).sort((a,b)=>+a.ordine-+b.ordine).map(x=>`<figure class="shot"><div class="media">${x.immagine?`<img src="${esc(x.immagine)}" alt="${esc(x.titolo)}">`:'Aggiungi una fotografia da Pages CMS'}</div><figcaption><h3>${esc(x.titolo)}</h3><p>${esc(x.descrizione)}</p></figcaption></figure>`).join('');
+ document.getElementById('faq-grid').innerHTML=q.filter(x=>x.mostra!==false).sort((a,b)=>+a.ordine-+b.ordine).map(x=>`<details><summary>${esc(x.domanda)}</summary><p>${esc(x.risposta)}</p></details>`).join('');
+ const mail=document.getElementById('mail');mail.href='mailto:'+s.email;mail.textContent=s.email;
+ const ph=document.getElementById('phone');ph.href='tel:'+s.telefono.replace(/[^\d+]/g,'');ph.textContent=s.telefono;
+})().catch(console.error);
+</script>
+</body></html>

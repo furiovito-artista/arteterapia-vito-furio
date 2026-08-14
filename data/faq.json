@@ -1,0 +1,26 @@
+[
+  {
+    "domanda": "A chi sono rivolti i percorsi?",
+    "risposta": "A persone adulte, gruppi, caregiver, anziani, enti, scuole, servizi e organizzazioni. La proposta viene definita in base al contesto.",
+    "ordine": 10,
+    "mostra": true
+  },
+  {
+    "domanda": "È necessario avere capacità artistiche?",
+    "risposta": "No. Non si cerca un risultato bello o corretto. Il materiale artistico è uno strumento di esperienza, relazione ed espressione.",
+    "ordine": 20,
+    "mostra": true
+  },
+  {
+    "domanda": "Dove si svolgono le attività?",
+    "risposta": "Principalmente nell’area di Porto Torres e Sassari, in studio o presso enti e strutture. Sono possibili trasferte da concordare.",
+    "ordine": 30,
+    "mostra": true
+  },
+  {
+    "domanda": "Come si avvia un progetto con una struttura?",
+    "risposta": "Si parte da un primo confronto su destinatari, bisogni, durata e risorse disponibili. Segue una proposta con obiettivi, attività e preventivo.",
+    "ordine": 40,
+    "mostra": true
+  }
+]

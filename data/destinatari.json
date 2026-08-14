@@ -1,0 +1,26 @@
+[
+  {
+    "titolo": "Persone e piccoli gruppi",
+    "descrizione": "Crescita personale, rilassamento, espressione, consapevolezza e relazione.",
+    "ordine": 10,
+    "mostra": true
+  },
+  {
+    "titolo": "Anziani e persone con demenza",
+    "descrizione": "Attività adattate che valorizzano partecipazione, memoria, sensorialità e possibilità espressive.",
+    "ordine": 20,
+    "mostra": true
+  },
+  {
+    "titolo": "Caregiver e famiglie",
+    "descrizione": "Spazi di sollievo, ascolto, condivisione e rielaborazione attraverso l’esperienza artistica.",
+    "ordine": 30,
+    "mostra": true
+  },
+  {
+    "titolo": "Enti, scuole e servizi",
+    "descrizione": "Laboratori, progetti, formazione e supervisione della progettazione espressiva.",
+    "ordine": 40,
+    "mostra": true
+  }
+]

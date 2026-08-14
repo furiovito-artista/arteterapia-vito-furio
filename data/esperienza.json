@@ -1,0 +1,26 @@
+[
+  {
+    "titolo": "Arteterapia con anziani e demenze",
+    "descrizione": "Progettazione e conduzione continuativa di attività adattate ai diversi livelli di autonomia.",
+    "ordine": 10,
+    "mostra": true
+  },
+  {
+    "titolo": "Percorsi per caregiver",
+    "descrizione": "Incontri individuali e di gruppo con attività artistiche, ascolto e rielaborazione dell’esperienza di cura.",
+    "ordine": 20,
+    "mostra": true
+  },
+  {
+    "titolo": "Teatroterapia in contesti sociali",
+    "descrizione": "Percorsi centrati su ascolto, fiducia, cooperazione, corpo e costruzione condivisa.",
+    "ordine": 30,
+    "mostra": true
+  },
+  {
+    "titolo": "Formazione",
+    "descrizione": "Seminari e laboratori esperienziali per educatori, operatori e professionisti della relazione d’aiuto.",
+    "ordine": 40,
+    "mostra": true
+  }
+]

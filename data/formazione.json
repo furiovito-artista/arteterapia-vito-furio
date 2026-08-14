@@ -1,0 +1,20 @@
+[
+  {
+    "titolo": "Laboratori esperienziali",
+    "descrizione": "Apprendere attraverso il fare, il corpo, il materiale e la rielaborazione condivisa.",
+    "ordine": 10,
+    "mostra": true
+  },
+  {
+    "titolo": "Progettazione nelle Artiterapie",
+    "descrizione": "Obiettivi, livelli di protezione, osservabili, rischi e adattamenti della consegna.",
+    "ordine": 20,
+    "mostra": true
+  },
+  {
+    "titolo": "Contesti educativi e sociosanitari",
+    "descrizione": "Strumenti applicabili a gruppi, servizi, anziani, caregiver e situazioni di fragilità.",
+    "ordine": 30,
+    "mostra": true
+  }
+]

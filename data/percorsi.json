@@ -1,0 +1,20 @@
+[
+  {
+    "titolo": "Arteterapia",
+    "descrizione": "Materiali, immagini, colore, segno e modellato per favorire espressione, ascolto, regolazione e consapevolezza.",
+    "ordine": 10,
+    "mostra": true
+  },
+  {
+    "titolo": "Teatroterapia",
+    "descrizione": "Corpo, spazio, voce, ritmo, gioco e improvvisazione per sostenere presenza, fiducia, relazione e cooperazione.",
+    "ordine": 20,
+    "mostra": true
+  },
+  {
+    "titolo": "Percorsi integrati",
+    "descrizione": "Esperienze che intrecciano arti visive, teatro, musica e movimento, adattate al gruppo e agli obiettivi del progetto.",
+    "ordine": 30,
+    "mostra": true
+  }
+]
