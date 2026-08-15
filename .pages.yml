@@ -1,0 +1,174 @@
+media:
+  input: assets/images
+  output: /assets/images
+  categories: [image]
+  extensions: [jpg, jpeg, png, webp, gif, avif]
+
+content:
+  - name: sito
+    label: Testi e impostazioni
+    type: file
+    path: data/sito.json
+    format: json
+    operations:
+      delete: false
+    fields:
+      - { name: titolo_pagina, label: Titolo pagina, type: string }
+      - { name: descrizione_pagina, label: Descrizione pagina, type: text }
+      - { name: nome, label: Nome, type: string }
+      - { name: sottotitolo_brand, label: Sottotitolo, type: string }
+      - { name: hero_etichetta, label: Etichetta iniziale, type: string }
+      - { name: hero_titolo, label: Titolo principale, type: text }
+      - { name: hero_testo, label: Testo principale, type: text }
+      - { name: hero_frase, label: Frase, type: string }
+
+      - { name: menu_percorsi, label: Menu Percorsi, type: string }
+      - { name: menu_opportunita, label: Menu Opportunità, type: string }
+      - { name: menu_formazione, label: Menu Formazione, type: string }
+      - { name: menu_galleria, label: Menu Galleria, type: string }
+      - { name: menu_sandart, label: Menu Sand Art, type: string }
+      - { name: menu_esperienza, label: Menu Esperienza, type: string }
+      - { name: menu_chi_sono, label: Menu Chi sono, type: string }
+      - { name: menu_contatti, label: Menu Contatti, type: string }
+
+      - { name: titolo_percorsi, label: Titolo Percorsi, type: text }
+      - { name: testo_percorsi, label: Testo Percorsi, type: text }
+      - { name: titolo_destinatari, label: Titolo Destinatari, type: text }
+      - { name: titolo_opportunita, label: Titolo Opportunità, type: text }
+      - { name: testo_opportunita, label: Testo Opportunità, type: text }
+
+      - { name: titolo_demenze, label: Titolo Anziani e demenze, type: text }
+      - { name: testo_demenze, label: Testo Anziani e demenze, type: text }
+
+      - { name: titolo_formazione, label: Titolo Formazione, type: text }
+      - { name: testo_formazione, label: Testo Formazione, type: text }
+
+      - { name: titolo_sandart, label: Titolo Sand Art, type: text }
+      - { name: testo_sandart, label: Testo Sand Art, type: text }
+
+      - { name: titolo_chi_sono, label: Nome Chi sono, type: string }
+      - { name: ruolo_chi_sono, label: Ruolo professionale, type: text }
+      - { name: testo_chi_sono, label: Biografia, type: text }
+
+      - { name: titolo_galleria, label: Titolo Galleria, type: text }
+      - { name: testo_galleria, label: Testo Galleria, type: text }
+
+      - { name: titolo_esperienza, label: Titolo Esperienza, type: text }
+      - { name: testo_esperienza, label: Testo Esperienza, type: text }
+
+      - { name: titolo_faq, label: Titolo FAQ, type: text }
+
+      - { name: titolo_contatti, label: Titolo Contatti, type: text }
+      - { name: testo_contatti, label: Testo Contatti, type: text }
+      - { name: zona, label: Zona, type: string }
+      - { name: email, label: Email, type: string }
+      - { name: telefono, label: Telefono, type: string }
+      - { name: piva, label: Partita IVA, type: string }
+      - { name: footer, label: Testo footer, type: text }
+      - { name: nota_legale, label: Nota legale, type: text }
+
+  - name: percorsi
+    label: Percorsi
+    type: file
+    path: data/percorsi.json
+    format: json
+    list: true
+    operations:
+      delete: false
+    fields:
+      - { name: titolo, label: Titolo, type: string, required: true }
+      - { name: descrizione, label: Descrizione, type: text }
+      - { name: ordine, label: Ordine, type: number }
+      - { name: mostra, label: Mostra nel sito, type: boolean }
+
+  - name: destinatari
+    label: Destinatari
+    type: file
+    path: data/destinatari.json
+    format: json
+    list: true
+    operations:
+      delete: false
+    fields:
+      - { name: titolo, label: Titolo, type: string, required: true }
+      - { name: descrizione, label: Descrizione, type: text }
+      - { name: ordine, label: Ordine, type: number }
+      - { name: mostra, label: Mostra nel sito, type: boolean }
+
+  - name: opportunita
+    label: Opportunità
+    type: file
+    path: data/opportunita.json
+    format: json
+    list: true
+    operations:
+      delete: false
+    fields:
+      - { name: titolo, label: Titolo, type: string, required: true }
+      - { name: descrizione, label: Descrizione, type: text }
+      - { name: immagine, label: Immagine, type: image }
+      - { name: ordine, label: Ordine, type: number }
+      - { name: mostra, label: Mostra nel sito, type: boolean }
+
+  - name: formazione
+    label: Formazione
+    type: file
+    path: data/formazione.json
+    format: json
+    list: true
+    operations:
+      delete: false
+    fields:
+      - { name: titolo, label: Titolo, type: string, required: true }
+      - { name: descrizione, label: Descrizione, type: text }
+      - { name: ordine, label: Ordine, type: number }
+      - { name: mostra, label: Mostra nel sito, type: boolean }
+
+  - name: galleria
+    label: Galleria
+    type: file
+    path: data/galleria.json
+    format: json
+    list: true
+    operations:
+      delete: false
+    fields:
+      - { name: titolo, label: Titolo, type: string, required: true }
+      - { name: descrizione, label: Descrizione, type: text }
+      - { name: immagine, label: Immagine, type: image }
+      - { name: ordine, label: Ordine, type: number }
+      - { name: mostra, label: Mostra nel sito, type: boolean }
+
+  - name: esperienza
+    label: Esperienza
+    type: file
+    path: data/esperienza.json
+    format: json
+    list: true
+    operations:
+      delete: false
+    fields:
+      - { name: titolo, label: Titolo, type: string, required: true }
+      - { name: descrizione, label: Descrizione, type: text }
+      - { name: ordine, label: Ordine, type: number }
+      - { name: mostra, label: Mostra nel sito, type: boolean }
+
+  - name: faq
+    label: Domande frequenti
+    type: file
+    path: data/faq.json
+    format: json
+    list: true
+    operations:
+      delete: false
+    fields:
+      - { name: domanda, label: Domanda, type: string, required: true }
+      - { name: risposta, label: Risposta, type: text, required: true }
+      - { name: ordine, label: Ordine, type: number }
+      - { name: mostra, label: Mostra nel sito, type: boolean }
+
+settings:
+  content:
+    merge: true
+  commit:
+    identity: user
