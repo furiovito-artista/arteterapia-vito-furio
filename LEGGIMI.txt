@@ -1,26 +1,31 @@
-SITO ARTETERAPIA — VERSIONE MODIFICABILE
+SITO ARTETERAPIA DI VITO FURIO — VERSIONE PAGES CMS
 
-Il sito è già predisposto per Pages CMS.
+Il sito mantiene la grafica completa e utilizza fotografie reali dell’archivio professionale.
 
-In Pages CMS potrai modificare:
-- tutti i testi principali;
-- Percorsi;
-- Destinatari;
-- Opportunità;
-- Formazione;
-- Galleria;
-- Esperienza;
-- Domande frequenti;
-- contatti;
-- fotografie nelle sezioni Opportunità e Galleria.
+DA PAGES CMS PUOI MODIFICARE
+- testi e titoli di tutte le sezioni;
+- fotografia principale, ritratto, formazione, anziani e Sand Art;
+- Percorsi, Destinatari e Opportunità;
+- Galleria fotografica;
+- Esperienza professionale e Domande frequenti;
+- email, telefono, zona, Partita IVA e collegamenti social.
 
-Per pubblicarlo:
-1. crea su GitHub un repository pubblico chiamato arteterapia-vito-furio;
-2. carica TUTTO il contenuto di questa cartella nella radice del repository;
-3. abilita il repository nell'app Pages CMS;
-4. collega il repository al Worker Cloudflare arteterapia-vito-furio;
-5. Build command vuoto; Deploy command: npx wrangler deploy; Root: /
+COME ACCEDERE
+1. Vai su https://app.pagescms.org/ e accedi con GitHub.
+2. Abilita il repository furiovito-artista/arteterapia-vito-furio.
+3. Apri il repository nel pannello Pages CMS.
+4. Scegli una sezione, modifica e premi Salva.
+
+PUBBLICAZIONE SU CLOUDFLARE
+Il repository contiene wrangler.jsonc ed è predisposto per il Worker
+arteterapia-vito-furio. Se il Worker è collegato al ramo main di GitHub,
+ogni salvataggio effettuato da Pages CMS avvia automaticamente il nuovo deploy.
+
+Impostazioni Cloudflare consigliate:
+- Root directory: /
+- Build command: vuoto
+- Deploy command: npx wrangler deploy
 
 NOTA
-Le fotografie del Worker attuale non sono contenute nel pacchetto: la versione è predisposta
-per aggiungerle/sostituirle facilmente da Pages CMS.
+La grafica del sito resta nel file index.html. Pages CMS è pensato per modificare
+contenuti e fotografie senza intervenire sul codice o sull’impaginazione.

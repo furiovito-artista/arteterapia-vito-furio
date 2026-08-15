@@ -1,26 +1,24 @@
 [
   {
-    "titolo": "Arteterapia con anziani e demenze",
-    "descrizione": "Progettazione e conduzione continuativa di attività adattate ai diversi livelli di autonomia.",
+    "titolo": "Attività attuali",
+    "voci": [
+      "Arteterapeuta presso un Centro Alzheimer di Sassari.",
+      "Libero professionista in percorsi e progetti di Arteterapia e Teatroterapia.",
+      "Docente e formatore nell’ambito delle Artiterapie.",
+      "Sand artist nel progetto narrativo e performativo “I Sabbiastorie”."
+    ],
     "ordine": 10,
     "mostra": true
   },
   {
-    "titolo": "Percorsi per caregiver",
-    "descrizione": "Incontri individuali e di gruppo con attività artistiche, ascolto e rielaborazione dell’esperienza di cura.",
+    "titolo": "Esperienze e ambiti",
+    "voci": [
+      "Esperienza pluriennale come educatore socio-pedagogico in servizi residenziali e comunità educative.",
+      "Laboratori con anziani, persone con demenza, caregiver e familiari.",
+      "Percorsi di Teatroterapia in contesti sociali e di esecuzione penale esterna.",
+      "Formazione rivolta a educatori, operatori sociali e professionisti della relazione d’aiuto."
+    ],
     "ordine": 20,
-    "mostra": true
-  },
-  {
-    "titolo": "Teatroterapia in contesti sociali",
-    "descrizione": "Percorsi centrati su ascolto, fiducia, cooperazione, corpo e costruzione condivisa.",
-    "ordine": 30,
-    "mostra": true
-  },
-  {
-    "titolo": "Formazione",
-    "descrizione": "Seminari e laboratori esperienziali per educatori, operatori e professionisti della relazione d’aiuto.",
-    "ordine": 40,
     "mostra": true
   }
 ]

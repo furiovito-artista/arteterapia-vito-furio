@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://arteterapia-vito-furio.furiovito.workers.dev/sitemap.xml

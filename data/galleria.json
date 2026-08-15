@@ -1,30 +1,8 @@
 [
-  {
-    "titolo": "Il gruppo nello spazio",
-    "descrizione": "Movimento, materiali e presenza costruiscono un’esperienza condivisa.",
-    "immagine": "",
-    "ordine": 10,
-    "mostra": true
-  },
-  {
-    "titolo": "Costruzione condivisa",
-    "descrizione": "Un paesaggio nasce dall’incontro tra elementi individuali.",
-    "immagine": "",
-    "ordine": 20,
-    "mostra": true
-  },
-  {
-    "titolo": "Materia e memoria",
-    "descrizione": "Fiori, fili e superfici diventano tracce visive.",
-    "immagine": "",
-    "ordine": 30,
-    "mostra": true
-  },
-  {
-    "titolo": "Corpo e relazione",
-    "descrizione": "Il gesto, il ritmo e la vicinanza diventano strumenti di ascolto e incontro.",
-    "immagine": "",
-    "ordine": 40,
-    "mostra": true
-  }
+  {"titolo":"Il gruppo in movimento","descrizione":"Corpo, spazio e relazione diventano materia del lavoro condiviso.","immagine":"/images/gruppo-in-movimento.jpg","testo_alternativo":"Gruppo di partecipanti in movimento durante un laboratorio","verticale":false,"ordine":10,"mostra":true},
+  {"titolo":"Sand Art dal vivo","descrizione":"Luce, sabbia, musica e narrazione si incontrano davanti al pubblico.","immagine":"/images/sand-art-dal-vivo.jpg","testo_alternativo":"Vito Furio durante una performance di Sand Art al tavolo luminoso","verticale":false,"ordine":20,"mostra":true},
+  {"titolo":"La maschera prende forma","descrizione":"Segni, colori e materia custodiscono una presenza personale.","immagine":"/images/maschera-realizzata.jpg","testo_alternativo":"Maschera artistica realizzata con colori pastello","verticale":true,"ordine":30,"mostra":true},
+  {"titolo":"Dall’opera alla scena","descrizione":"La maschera diventa corpo, gesto e possibilità espressiva.","immagine":"/images/maschera-in-scena.jpg","testo_alternativo":"Partecipante in scena con una maschera bicolore e le braccia aperte","verticale":true,"ordine":40,"mostra":true},
+  {"titolo":"Teatroterapia in gruppo","descrizione":"Gioco, improvvisazione e ascolto costruiscono un’esperienza comune.","immagine":"/images/teatroterapia-gruppo.jpg","testo_alternativo":"Gruppo impegnato in un’attività teatrale e corporea","verticale":true,"ordine":50,"mostra":true},
+  {"titolo":"Materia e memoria","descrizione":"Fiori, fili e superfici diventano tracce visive.","immagine":"/images/composizioni-botaniche.webp","testo_alternativo":"Composizioni floreali realizzate con cartone, carta, filo e colore","verticale":true,"ordine":60,"mostra":true}
 ]
