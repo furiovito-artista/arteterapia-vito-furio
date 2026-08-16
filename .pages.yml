@@ -1,70 +1,99 @@
 media:
-  input: assets/images
-  output: /assets/images
+  input: images
+  output: /images
   categories: [image]
   extensions: [jpg, jpeg, png, webp, gif, avif]
 
 content:
   - name: sito
-    label: Testi e impostazioni
+    label: Testi, immagini principali e contatti
     type: file
     path: data/sito.json
     format: json
     operations:
       delete: false
     fields:
-      - { name: titolo_pagina, label: Titolo pagina, type: string }
-      - { name: descrizione_pagina, label: Descrizione pagina, type: text }
-      - { name: nome, label: Nome, type: string }
-      - { name: sottotitolo_brand, label: Sottotitolo, type: string }
-      - { name: hero_etichetta, label: Etichetta iniziale, type: string }
-      - { name: hero_titolo, label: Titolo principale, type: text }
-      - { name: hero_testo, label: Testo principale, type: text }
-      - { name: hero_frase, label: Frase, type: string }
+      - { name: titolo_pagina, label: Titolo della pagina, type: string }
+      - { name: descrizione_pagina, label: Descrizione per Google, type: text }
+      - { name: nome, label: Nome nel logo, type: string }
+      - { name: sottotitolo_brand, label: Sottotitolo nel logo, type: string }
 
-      - { name: menu_percorsi, label: Menu Percorsi, type: string }
-      - { name: menu_opportunita, label: Menu Opportunità, type: string }
-      - { name: menu_formazione, label: Menu Formazione, type: string }
-      - { name: menu_galleria, label: Menu Galleria, type: string }
-      - { name: menu_sandart, label: Menu Sand Art, type: string }
-      - { name: menu_esperienza, label: Menu Esperienza, type: string }
-      - { name: menu_chi_sono, label: Menu Chi sono, type: string }
-      - { name: menu_contatti, label: Menu Contatti, type: string }
+      - { name: hero_etichetta, label: Apertura · Etichetta, type: string }
+      - { name: hero_titolo, label: Apertura · Titolo principale, type: text }
+      - { name: hero_testo, label: Apertura · Testo, type: text }
+      - { name: hero_frase, label: Apertura · Frase, type: string }
+      - { name: hero_immagine, label: Apertura · Fotografia, type: image }
+      - { name: hero_alt, label: Apertura · Descrizione fotografia, type: string }
 
-      - { name: titolo_percorsi, label: Titolo Percorsi, type: text }
-      - { name: testo_percorsi, label: Testo Percorsi, type: text }
-      - { name: titolo_destinatari, label: Titolo Destinatari, type: text }
-      - { name: titolo_opportunita, label: Titolo Opportunità, type: text }
-      - { name: testo_opportunita, label: Testo Opportunità, type: text }
+      - { name: menu_percorsi, label: Menu · Percorsi, type: string }
+      - { name: menu_opportunita, label: Menu · Opportunità, type: string }
+      - { name: menu_formazione, label: Menu · Formazione, type: string }
+      - { name: menu_galleria, label: Menu · Galleria, type: string }
+      - { name: menu_sandart, label: Menu · Sand Art, type: string }
+      - { name: menu_esperienza, label: Menu · Esperienza, type: string }
+      - { name: menu_chi_sono, label: Menu · Chi sono, type: string }
+      - { name: menu_contatti, label: Menu · Contatti, type: string }
 
-      - { name: titolo_demenze, label: Titolo Anziani e demenze, type: text }
-      - { name: testo_demenze, label: Testo Anziani e demenze, type: text }
+      - { name: intro_1, label: Fascia iniziale · Riga 1, type: string }
+      - { name: intro_2, label: Fascia iniziale · Riga 2, type: string }
+      - { name: intro_3, label: Fascia iniziale · Riga 3, type: string }
 
-      - { name: titolo_formazione, label: Titolo Formazione, type: text }
-      - { name: testo_formazione, label: Testo Formazione, type: text }
+      - { name: titolo_percorsi, label: Percorsi · Titolo, type: text }
+      - { name: testo_percorsi, label: Percorsi · Testo, type: text }
 
-      - { name: titolo_sandart, label: Titolo Sand Art, type: text }
-      - { name: testo_sandart, label: Testo Sand Art, type: text }
+      - { name: titolo_destinatari, label: Destinatari · Titolo, type: text }
+      - { name: destinatari_immagine, label: Destinatari · Fotografia, type: image }
+      - { name: destinatari_alt, label: Destinatari · Descrizione fotografia, type: string }
+      - { name: destinatari_frase, label: Destinatari · Frase sulla fotografia, type: text }
 
-      - { name: titolo_chi_sono, label: Nome Chi sono, type: string }
-      - { name: ruolo_chi_sono, label: Ruolo professionale, type: text }
-      - { name: testo_chi_sono, label: Biografia, type: text }
+      - { name: titolo_opportunita, label: Opportunità · Titolo, type: text }
+      - { name: testo_opportunita, label: Opportunità · Testo, type: text }
 
-      - { name: titolo_galleria, label: Titolo Galleria, type: text }
-      - { name: testo_galleria, label: Testo Galleria, type: text }
+      - { name: titolo_demenze, label: Anziani e demenze · Titolo, type: text }
+      - { name: testo_demenze_1, label: Anziani e demenze · Primo testo, type: text }
+      - { name: testo_demenze_2, label: Anziani e demenze · Secondo testo, type: text }
+      - { name: demenze_immagine, label: Anziani e demenze · Fotografia, type: image }
+      - { name: demenze_alt, label: Anziani e demenze · Descrizione fotografia, type: string }
 
-      - { name: titolo_esperienza, label: Titolo Esperienza, type: text }
-      - { name: testo_esperienza, label: Testo Esperienza, type: text }
+      - { name: titolo_formazione, label: Formazione · Titolo, type: text }
+      - { name: testo_formazione, label: Formazione · Testo, type: text }
+      - { name: formazione_immagine, label: Formazione · Fotografia, type: image }
+      - { name: formazione_alt, label: Formazione · Descrizione fotografia, type: string }
+      - { name: formazione_box_etichetta, label: Formazione · Etichetta riquadro, type: string }
+      - { name: formazione_box_titolo, label: Formazione · Titolo riquadro, type: text }
+      - { name: formazione_box_testo, label: Formazione · Testo riquadro, type: text }
 
-      - { name: titolo_faq, label: Titolo FAQ, type: text }
+      - { name: titolo_sandart, label: Sand Art · Titolo, type: text }
+      - { name: testo_sandart, label: Sand Art · Testo, type: text }
+      - { name: sandart_immagine, label: Sand Art · Fotografia, type: image }
+      - { name: sandart_alt, label: Sand Art · Descrizione fotografia, type: string }
+      - { name: sandart_nota, label: Sand Art · Frase finale, type: text }
 
-      - { name: titolo_contatti, label: Titolo Contatti, type: text }
-      - { name: testo_contatti, label: Testo Contatti, type: text }
+      - { name: titolo_chi_sono, label: Chi sono · Nome, type: string }
+      - { name: ruolo_chi_sono, label: Chi sono · Ruoli professionali, type: text }
+      - { name: testo_chi_sono_1, label: Chi sono · Primo testo, type: text }
+      - { name: testo_chi_sono_2, label: Chi sono · Secondo testo, type: text }
+      - { name: ritratto_immagine, label: Chi sono · Ritratto, type: image }
+      - { name: ritratto_alt, label: Chi sono · Descrizione ritratto, type: string }
+      - { name: ritratto_nota, label: Chi sono · Didascalia ritratto, type: string }
+
+      - { name: titolo_galleria, label: Galleria · Titolo, type: text }
+      - { name: testo_galleria, label: Galleria · Testo, type: text }
+      - { name: titolo_esperienza, label: Esperienza · Titolo, type: text }
+      - { name: testo_esperienza, label: Esperienza · Testo, type: text }
+      - { name: titolo_faq, label: Domande frequenti · Titolo, type: text }
+      - { name: testo_faq, label: Domande frequenti · Testo, type: text }
+
+      - { name: titolo_contatti, label: Contatti · Titolo, type: text }
+      - { name: testo_contatti, label: Contatti · Testo, type: text }
       - { name: zona, label: Zona, type: string }
+      - { name: attivita, label: Attività, type: string }
       - { name: email, label: Email, type: string }
       - { name: telefono, label: Telefono, type: string }
       - { name: piva, label: Partita IVA, type: string }
-      - { name: footer, label: Testo footer, type: text }
+      - { name: facebook_url, label: Collegamento Facebook, type: string }
+      - { name: instagram_url, label: Collegamento Instagram, type: string }
+      - { name: footer, label: Testo nel piè di pagina, type: text }
       - { name: nota_legale, label: Nota legale, type: text }
 
   - name: percorsi
@@ -78,6 +107,9 @@ content:
     fields:
       - { name: titolo, label: Titolo, type: string, required: true }
       - { name: descrizione, label: Descrizione, type: text }
+      - { name: icona, label: Simbolo, type: string }
+      - { name: link_testo, label: Testo del pulsante, type: string }
+      - { name: link_destinazione, label: Destinazione del pulsante, type: string }
       - { name: ordine, label: Ordine, type: number }
       - { name: mostra, label: Mostra nel sito, type: boolean }
 
@@ -106,7 +138,9 @@ content:
     fields:
       - { name: titolo, label: Titolo, type: string, required: true }
       - { name: descrizione, label: Descrizione, type: text }
-      - { name: immagine, label: Immagine, type: image }
+      - { name: immagine, label: Fotografia, type: image }
+      - { name: link_testo, label: Testo del collegamento, type: string }
+      - { name: link_destinazione, label: Destinazione del collegamento, type: string }
       - { name: ordine, label: Ordine, type: number }
       - { name: mostra, label: Mostra nel sito, type: boolean }
 
@@ -125,7 +159,7 @@ content:
       - { name: mostra, label: Mostra nel sito, type: boolean }
 
   - name: galleria
-    label: Galleria
+    label: Galleria fotografica
     type: file
     path: data/galleria.json
     format: json
@@ -134,13 +168,15 @@ content:
       delete: false
     fields:
       - { name: titolo, label: Titolo, type: string, required: true }
-      - { name: descrizione, label: Descrizione, type: text }
-      - { name: immagine, label: Immagine, type: image }
+      - { name: descrizione, label: Didascalia, type: text }
+      - { name: immagine, label: Fotografia, type: image }
+      - { name: testo_alternativo, label: Descrizione accessibile della fotografia, type: string }
+      - { name: verticale, label: Fotografia verticale, type: boolean }
       - { name: ordine, label: Ordine, type: number }
       - { name: mostra, label: Mostra nel sito, type: boolean }
 
   - name: esperienza
-    label: Esperienza
+    label: Esperienza professionale
     type: file
     path: data/esperienza.json
     format: json
@@ -148,8 +184,11 @@ content:
     operations:
       delete: false
     fields:
-      - { name: titolo, label: Titolo, type: string, required: true }
-      - { name: descrizione, label: Descrizione, type: text }
+      - { name: titolo, label: Titolo del riquadro, type: string, required: true }
+      - name: voci
+        label: Esperienze
+        type: string
+        list: true
       - { name: ordine, label: Ordine, type: number }
       - { name: mostra, label: Mostra nel sito, type: boolean }
 
